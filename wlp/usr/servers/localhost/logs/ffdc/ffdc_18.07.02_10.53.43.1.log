@@ -1,0 +1,126 @@
+------Start of DE processing------ = [7/2/18 10:53:43:885 CAT]
+Exception = java.lang.NoClassDefFoundError
+Source = com.ibm.wsspi.injectionengine.MethodMap.getAllDeclaredMethods
+probeid = 106
+Stack Dump = java.lang.NoClassDefFoundError: org/apache/tiles/el/ScopeELResolver
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at com.ibm.wsspi.injectionengine.MethodMap.getMethods(MethodMap.java:148)
+	at com.ibm.wsspi.injectionengine.MethodMap.getAllDeclaredMethods(MethodMap.java:84)
+	at com.ibm.ws.injectionengine.InjectionProcessorManager.getAllDeclaredMethods(InjectionProcessorManager.java:428)
+	at com.ibm.ws.injectionengine.InjectionProcessorManager.processAnnotations(InjectionProcessorManager.java:230)
+	at com.ibm.ws.injectionengine.AbstractInjectionEngine.processInjectionMetaData(AbstractInjectionEngine.java:513)
+	at com.ibm.ws.injectionengine.osgi.internal.OSGiInjectionEngineImpl.processInjectionMetaData(OSGiInjectionEngineImpl.java:238)
+	at com.ibm.ws.injectionengine.ReferenceContextImpl.processImpl(ReferenceContextImpl.java:594)
+	at com.ibm.ws.injectionengine.ReferenceContextImpl.process(ReferenceContextImpl.java:289)
+	at com.ibm.ws.injectionengine.osgi.internal.OSGiReferenceContextImpl.process(OSGiReferenceContextImpl.java:30)
+	at com.ibm.ws.cdi.impl.weld.WebSphereCDIDeploymentImpl.initializeInjectionServices(WebSphereCDIDeploymentImpl.java:631)
+	at com.ibm.ws.cdi.impl.CDIContainerImpl.startInitialization(CDIContainerImpl.java:133)
+	at com.ibm.ws.cdi.liberty.CDIRuntimeImpl.applicationStarting(CDIRuntimeImpl.java:400)
+	at com.ibm.ws.container.service.state.internal.ApplicationStateManager.fireStarting(ApplicationStateManager.java:28)
+	at com.ibm.ws.container.service.state.internal.StateChangeServiceImpl.fireApplicationStarting(StateChangeServiceImpl.java:50)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.preDeployApp(DeployedAppInfoBase.java:383)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployApp(DeployedAppInfoBase.java:412)
+	at com.ibm.ws.app.manager.war.internal.WARApplicationHandlerImpl.install(WARApplicationHandlerImpl.java:65)
+	at com.ibm.ws.app.manager.internal.statemachine.StartAction.execute(StartAction.java:140)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.enterState(ApplicationStateMachineImpl.java:1258)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.run(ApplicationStateMachineImpl.java:873)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: org.apache.tiles.el.ScopeELResolver
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:504)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:276)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:482)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:443)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 26 more
+
+Dump of callerThis
+null
+==> Performing default dump from com.ibm.ws.injectionengine.ffdc.InjectionDiagnosticModule  = Mon Jul 02 10:53:43 CAT 2018
+ = *** Start InjectionDiagnosticModule Dump ***
+ = > InjectionDiagnosticModule: dump Object array : 3
+ = 
+ =    Non-Formattable :
+ =       > java.lang.Class@76f0d5c9
+ =            class org.springframework.web.servlet.view.tiles3.TilesConfigurer$CompositeELResolverImpl
+ =       > java.lang.Class@76f0d5c9
+ =            class org.springframework.web.servlet.view.tiles3.TilesConfigurer$CompositeELResolverImpl
+ =       > java.util.LinkedHashSet@32afe9f6
+ =            []
+ = < InjectionDiagnosticModule: dump Object array complete
+ = 
+ = *** Start InjectionEngine Dump    ---> com.ibm.ws.injectionengine.osgi.internal.OSGiInjectionEngineImpl@7fd73a05
+ = 
+ =    Default Factories : 
+ =       Indirect    = com.ibm.ws.injectionengine.osgi.internal.IndirectJndiLookupReferenceFactoryImpl@b22f668
+ =       ResIndirect = com.ibm.ws.injectionengine.osgi.internal.IndirectJndiLookupReferenceFactoryImpl@f2c4f9a
+ =       ResRef      = com.ibm.ws.injectionengine.osgi.internal.ResRefReferenceFactoryImpl@271bc9be
+ =       ResAuto     = com.ibm.ws.injectionengine.osgi.internal.ResAutoLinkReferenceFactoryImpl@615ad84a
+ =       EJBLink     = com.ibm.ws.injectionengine.osgi.internal.EJBLinkReferenceFactoryImpl@7dd7f3bf
+ =       MBLink      = com.ibm.ws.injectionengine.factory.MBLinkReferenceFactoryImpl@106a3300
+ = 
+ =    Actual Factories : 
+ =       com.ibm.ws.ejbcontainer.injection.factory.MBLinkReferenceFactoryImpl@69c54e8a
+ = 
+ =    Registered Processors : 
+ =       javax.mail.MailSessionDefinition : com.ibm.ws.javamail.internal.injection.MailSessionDefinitionInjectionProcessorProvider@5eea5370
+ =       javax.ws.rs.QueryParam : com.ibm.ws.jaxrs20.component.injection.QueryParamProcessorProvider@1c620919
+ =       javax.ejb.EJB : com.ibm.ws.ejb.injection.processor.EJBProcessorProvider@5d51cba6
+ =       javax.annotation.Resource : com.ibm.ws.injectionengine.processor.ResourceProcessorProvider@1ea37f98
+ =       javax.annotation.sql.DataSourceDefinition : com.ibm.ws.injectionengine.processor.DataSourceDefinitionProcessorProvider@125eceef
+ =       javax.persistence.PersistenceUnit : com.ibm.ws.jpa.container.osgi.internal.JPAPUnitProcessorProvider@1e78277c
+ =       javax.resource.ConnectionFactoryDefinition : com.ibm.ws.jca17.processor.ConnectionFactoryDefinitionProcessorProvider@4d27d3ee
+ =       javax.ws.rs.PathParam : com.ibm.ws.jaxrs20.component.injection.PathParamProcessorProvider@48fd3a6d
+ =       javax.jms.JMSConnectionFactoryDefinition : com.ibm.ws.jca.processor.jms.connectionfactory.JMSConnectionFactoryDefinitionProcessorProvider@2c30bc2b
+ =       javax.jms.JMSDestinationDefinition : com.ibm.ws.jca.processor.jms.destination.JMSDestinationDefinitionProcessorProvider@73ac3d16
+ =       javax.ws.rs.CookieParam : com.ibm.ws.jaxrs20.component.injection.CookieParamProcessorProvider@67382e
+ =       javax.ws.rs.BeanParam : com.ibm.ws.jaxrs20.component.injection.BeanParamProcessProvider@2168541d
+ =       javax.ws.rs.HeaderParam : com.ibm.ws.jaxrs20.component.injection.HeaderParamProcessorProvider@81075ff
+ =       javax.xml.ws.WebServiceRef : com.ibm.ws.jaxws.client.injection.WebServiceRefProcessorProvider@1ac6bd66
+ =       javax.ws.rs.core.Context : com.ibm.ws.jaxrs20.component.injection.ContextProcessorProvider@23d94058
+ =       javax.inject.Inject : com.ibm.ws.cdi.impl.inject.InjectProcessorProvider@40f23082
+ =       javax.ws.rs.MatrixParam : com.ibm.ws.jaxrs20.component.injection.MatrixParamProcessorProvider@4bc61aee
+ =       javax.resource.AdministeredObjectDefinition : com.ibm.ws.jca17.processor.AdministeredObjectDefinitionProcessorProvider@6444b37d
+ =       javax.persistence.PersistenceContext : com.ibm.ws.jpa.container.osgi.internal.JPAPCtxtProcessorProvider@d76f42d
+ = 
+ =    Registered Object Factories : 
+ = 
+ =    Registered No-Override Object Factories : 
+ =       javax.annotation.Resource
+ =          com.ibm.websphere.ejbcontainer.EJBContextExtension : com.ibm.ws.injectionengine.ObjectFactoryInfoImpl@5c51a321[class com.ibm.ws.ejbcontainer.injection.factory.EJBContextObjectFactory, null]
+ =          javax.transaction.TransactionSynchronizationRegistry : com.ibm.ws.transaction.services.TransactionSynchronizationRegistryObjectFactoryInfo@273bd32f
+ =          javax.enterprise.inject.spi.BeanManager : com.ibm.ws.cdi.jndi.liberty.BeanManagerObjectFactoryInfo@662553ee
+ =          javax.ejb.EntityContext : com.ibm.ws.injectionengine.ObjectFactoryInfoImpl@5c48049b[class com.ibm.ws.ejbcontainer.injection.factory.EJBContextObjectFactory, null]
+ =          javax.ejb.TimerService : com.ibm.ws.injectionengine.ObjectFactoryInfoImpl@dd1ec98[class com.ibm.ws.ejbcontainer.injection.factory.TimerServiceObjectFactory, null]
+ =          com.ibm.websphere.ejbcontainer.MessageDrivenContextExtension : com.ibm.ws.injectionengine.ObjectFactoryInfoImpl@748af4a6[class com.ibm.ws.ejbcontainer.injection.factory.EJBContextObjectFactory, null]
+ =          com.ibm.wsspi.uow.UOWManager : com.ibm.ws.transaction.services.UOWManagerObjectFactoryInfo@38fc63fa
+ =          javax.ejb.MessageDrivenContext : com.ibm.ws.injectionengine.ObjectFactoryInfoImpl@248cc4a2[class com.ibm.ws.ejbcontainer.injection.factory.EJBContextObjectFactory, null]
+ =          org.omg.CORBA.ORB : com.ibm.ws.ejbcontainer.remote.internal.ORBObjectFactoryInfo@263b4987
+ =          javax.transaction.UserTransaction : com.ibm.ws.transaction.services.TransactionObjectFactoryInfo@537b622
+ =          javax.validation.Validator : com.ibm.ws.beanvalidation.ValidatorObjectFactoryInfo@5e8ff6cd
+ =          com.ibm.websphere.ejbcontainer.EntityContextExtension : com.ibm.ws.injectionengine.ObjectFactoryInfoImpl@1ce4906a[class com.ibm.ws.ejbcontainer.injection.factory.EJBContextObjectFactory, null]
+ =          javax.ejb.EJBContext : com.ibm.ws.injectionengine.ObjectFactoryInfoImpl@60ef9500[class com.ibm.ws.ejbcontainer.injection.factory.EJBContextObjectFactory, null]
+ =          javax.ejb.SessionContext : com.ibm.ws.injectionengine.ObjectFactoryInfoImpl@5851b999[class com.ibm.ws.ejbcontainer.injection.factory.EJBContextObjectFactory, null]
+ =          javax.validation.ValidatorFactory : com.ibm.ws.beanvalidation.ValidatorFactoryObjectFactoryInfo@79c915c0
+ =          com.ibm.websphere.ejbcontainer.SessionContextExtension : com.ibm.ws.injectionengine.ObjectFactoryInfoImpl@4196ad53[class com.ibm.ws.ejbcontainer.injection.factory.EJBContextObjectFactory, null]
+ =          javax.xml.ws.WebServiceContext : com.ibm.ws.jaxws.injection.WebServiceContextObjectFactoryInfo@5dcd67f4
+ = 
+ =    Registered Override Reference Factories : 
+ = 
+ =    Registered MetaDataListeners : 
+ =       com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl@88590a5
+ =       com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl@3953e360
+ =       com.ibm.ws.jaxws.support.JaxWsInjectionMetaDataListener@4ddb3d2c
+ =       com.ibm.ws.cdi.impl.CDIContainerImpl@7b9f11a4
+ = 
+ =    isEmbeddable    : false
+ = 
+ = *** InjectionEngine Dump Complete ***
+ = 
+ = *** InjectionDiagnosticModule Dump Complete ***
++ Data for directive [Default] obtained. = 
+==> Dump complete for com.ibm.ws.injectionengine.ffdc.InjectionDiagnosticModule  = Mon Jul 02 10:53:43 CAT 2018

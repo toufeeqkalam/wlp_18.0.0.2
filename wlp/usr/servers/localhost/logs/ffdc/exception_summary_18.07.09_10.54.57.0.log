@@ -1,0 +1,8 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1     7/9/18 10:54:57:797 CAT     7/9/18 10:54:57:797 CAT java.lang.NoClassDefFoundError com.ibm.ws.injectionengine.InjectionProcessorManager.getAllDeclaredFields 249
+                                                                            - C:\Users\tkalam\Documents\projects\server\liberty\wlp-javaee8-18.0.0.2\wlp\usr\servers\localhost\logs\ffdc\ffdc_18.07.09_10.54.57.0.log
+     1      1     7/9/18 10:54:57:828 CAT     7/9/18 10:54:57:828 CAT java.lang.NoClassDefFoundError com.ibm.wsspi.injectionengine.MethodMap.getAllDeclaredMethods 106
+                                                                            - C:\Users\tkalam\Documents\projects\server\liberty\wlp-javaee8-18.0.0.2\wlp\usr\servers\localhost\logs\ffdc\ffdc_18.07.09_10.54.57.1.log
+------+------+---------------------------+---------------------------+---------------------------

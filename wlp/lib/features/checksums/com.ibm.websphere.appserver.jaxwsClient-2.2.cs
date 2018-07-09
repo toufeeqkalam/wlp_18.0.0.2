@@ -1,0 +1,26 @@
+#Tue Jun 19 06:22:48 BST 2018
+lib/com.ibm.ws.org.apache.neethi.3.0.2_1.0.21.jar=51a4fddb1b10dc52b8266849d031c3f0
+lib/com.ibm.ws.org.apache.cxf-rt-management.2.6.2_1.0.21.jar=61b9ad4316f0d66f0b672d1ae732be8e
+lib/com.ibm.ws.org.apache.cxf-rt-databinding-jaxb.2.6.2_1.0.21.jar=0179bec991db945769820e9c2917fb91
+lib/features/com.ibm.websphere.appserver.jaxwsClient-2.2.mf=a409fbe0faaf834a9c6ca25a41304cb7
+lib/com.ibm.ws.org.apache.cxf-rt-bindings-xml.2.6.2_1.0.21.jar=2130410de27d914fc561b3e3f000b6d4
+dev/api/spec/com.ibm.websphere.prereq.wsdl4j.api_1.0.21.jar=25272823e5ade8f1d8fa0175fc86ca1a
+dev/api/spec/com.ibm.websphere.javaee.jaxws.2.2_1.0.21.jar=d91eae26cefa36912c16880eaa133754
+lib/com.ibm.ws.org.apache.cxf-rt-frontend-simple.2.6.2_1.0.21.jar=6c0385c26ba13af40850cb60c9587ea0
+lib/com.ibm.ws.javaee.ddmodel.wsbnd_1.0.21.jar=d0cbbdff0f3a874b66944243962faef8
+lib/com.ibm.ws.org.apache.cxf-rt-ws-addr.2.6.2_1.0.21.jar=cd269a9333fa6b14a9c7e8782ad22124
+lib/com.ibm.ws.org.apache.cxf-rt-frontend-jaxws.2.6.2_1.0.21.jar=ea4d0c6b21107f0ac843590121b87173
+bin/jaxws/tools/ws-wsimport.jar=d3f84cd2e18e7b2f9f30e69babd5ad2d
+lib/com.ibm.ws.prereq.wsdl4j.1.6.2_1.0.21.jar=3f35af06d1cca1815d1203e27ec729f9
+lib/com.ibm.ws.org.apache.xml.resolver.1.2_1.0.21.jar=15b56d837bc6636c1f40e53ddcd65848
+lib/com.ibm.ws.org.apache.cxf-rt-ws-policy.2.6.2_1.0.21.jar=a27c12215557aa1f6527e20a5f5888a7
+lib/com.ibm.ws.org.apache.cxf-rt-bindings-soap.2.6.2_1.0.21.jar=80f716ff4cf3869816349a835cc467d6
+bin/jaxws/tools/ws-wsgen.jar=8e0e9019903c936bdc5e79c4ba4d5b5d
+lib/com.ibm.ws.org.apache.cxf-rt-transports-http.2.6.2_1.0.21.jar=2681c81e3c2e62763c1b6fbf78df3ed4
+lib/com.ibm.ws.org.apache.cxf-rt-core.2.6.2_1.0.21.jar=5a97a915eea336ac142ce2dfdb0f835c
+lib/com.ibm.ws.org.apache.ws.xmlschema.core.2.0.3_1.0.21.jar=ff9361705efbb77366407fa97a44a9f8
+lib/com.ibm.ws.jaxws.tools.2.2.10_1.0.21.jar=1e32b946bdc107c41bcfd95890d62a8c
+lib/com.ibm.ws.jaxws.clientcontainer_1.0.21.jar=eefceaccb524873dcdfe9842918e85c2
+dev/api/ibm/schema/ibm-ws-bnd_1_0.xsd=f883cf9b0a2a4a4562c99e7874cd07c1
+lib/com.ibm.ws.org.apache.cxf-api.2.6.2_1.0.21.jar=5534f6a529fafac30bf872148e4cc7bb
+dev/api/spec/com.ibm.websphere.javaee.wsdl4j.1.2_1.0.21.jar=c84db149ae17394786518194fabbe329

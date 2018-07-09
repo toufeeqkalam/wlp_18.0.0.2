@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: legacy-integration-rest
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: tkalam
+Implementation-Vendor-Id: com.met.co.za
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.8.0_172
+Main-Class: ${start-class}
+

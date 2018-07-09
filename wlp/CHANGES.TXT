@@ -1,0 +1,81 @@
+PI82554 WEBSPHERE LIBERTY PROFILE ANGEL PROCESS DOES NOT IDENTIFY ITS VERSION AND FIX PACK LEVEL DURING START-UP
+PI88291 SLOW START OF THE WEB SERVICES AND ERROR DURING THE STARTUP OF THE SERVICES.
+PI89624 CWWKS4106E: LTPA CONFIGURATION ERROR IN LIBERTY
+PI90716 Liberty z/OS CWWKY0035I: AN EXCEPTION OCCURRED WHILE TRYING TO PERSIST JOB JAVA.LANG.ILLEGALSTATEEXCEPTION: NO MATCH FOUND
+PI90719 COMMAND LINE SCRIPT TO DETECT IF COMMAND PORT IS ENABLED, FOR USE DURING PAUSE/RESUME REQUEST
+PI90804 Security Vulnerability in Apache Commons used by WebSphere Application Server (CVE-2016-1000031)
+PI90961 LIBERTY ON Z/OS: BATCH JMS DISPATCHER CHANGE TO LAZY ACCESS OF CONNECTION FACTORY.
+PI90980 POTENTIAL SPOOFING VULNERABILITY IN WEBSPHERE APPLICATION SERVER (CVE-2017-1788)
+PI92330 CWWKS2910E ERROR WHEN USING DYNAMIC ROUTING IN LIBERTY PROFILE ON Z/OS WITH SAF SECURITY
+PI92386 High CPU usage on Liberty when using IBM JDK
+PI92477 WELD-2447 CLIENT PROXY SERIALIZATION SUPPORT SHOULD BE CONTAINER AGNOSTIC
+PI92847 JPQL WITH TRIM DOESN'T ISN'T HANDLED PROPERLY AND IT RESULTS IN DATABASEEXCEPTION
+PI93064 ECLIPSELINK THROWS ORA-00932 FOR CLOB FIELDS IN AN ELEMENTCOLLECTION
+PI93226 SRVE0266E : ERROR OCCURED WHILE INITIALIZING SERVLETS:JAVA.UTIL.CONCURRENTMODIFICATIONEXCE
+PI93303 CICS_REGION_BUT_API_DISALLOWED SURFACES USING OAUTH-2.0 FEATURE
+PI93474 Remove SessionManager instance when app is stopped
+PI93514 JOB PURGE REQUEST DELETES THE BATCH DB RECORDS EVEN WHEN THE EXECUTOR JVM IS STOPPED.
+PI93922 SMF120-11 TIMEUSED AND STARTTIME IS ONLY SET FOR A FORWARDED SERVLET
+PI93972 CLASSLOADER ISSUES IN JSFEXTENSIONFACTORY CAN CAUSE NPE
+PI94027 ECLIPSELINK JPQL GENERATION FOR NESTED ARRAYS WITH 'IN' EXPRESSION
+PI94351 SECURE FLAG IS NOT SET ON THE LIBERTY WASOIDCCODE COOKIE
+PI94514 NullPointerException occurs using a MetaDataGenerator.
+PI94599 Intermittent NPE in SocialLogin feature when a running server is reconfigured.
+PI94947 Update of composite component within ui:repeat doesn't work
+PI95215 MessageEndpoints are not properly released
+PI95283 ECLIPSELINK INSERTOBJECTQUERY CONCURRENCY FAILURE
+PI95405 LIBERTY MAY NOT FIND KEY IN JWK BY X5T
+PI95717 UNCOVEREDHTTPMETHODWARNINGS AND SUPPRESSUNCOVEREDHTTPMETHODWARNI
+PI95766 DB REPRESENTATION OF BOOLEAN VALUES WITH POSTGRES IS INCORRECT
+PI95821 Stabilize Product Insights Enablement
+PI95864 Specifying an angel name of "" for the server does not register server to default angel process.
+PI95871 WRONG CONTEXT CLASSLOADER IN ORG.APACHE.OPENJPA.ENHANCE.PC
+PI95994 Deploying docker container as liberty collective member failed with error "already appears to be a member."
+PI96012 CLIENT AUTHENTICATION JWTS REQUIRE "SUB" CLAIM
+PI96014 AUTHFILTER IN LIBERTY NOT MATCHING WHEN MULTIPLE PATHS ARE DEFINED.
+PI96187 Update bluemixUtility command for data sovereignty regulations
+PI96273 Some 404 and 500 errors in OAuth or OpenID Connect might expose configuration information.
+PI96597 THERE IS AN ISSUE WITH THE CACHE
+PI96735 ACCESS LOG "MAXFILES" ATTRIBUTE NOT WORKING AS INTENDED WITH VALUE OF 0
+PI96813 It is difficult to automate WebSphere Liberty from messages on the z/OS console
+PI96814 SCIM RETURNS HTTP STATUS CODE 500 WHEN PASSED AN INVALID FILTER
+PI96884 Information disclosure in WebSphere Application Server Liberty (CVE-2018-1553)
+PI96954 LIBERTY ON Z/OS MEMORY LEAK IN 64BIT PRIVATE DUE TO NATIVE DIRECT BYTEBUFFER SUPPORT
+PI97234 APAR for OLGH2631
+PI97288 Attachments behavior change in Liberty after migrating from tWAS
+PI97611 ABEND 0C1 IN NTV_GETANGELVERSION WITH WEBSPHERE LIBERTY VERSION 18.0.0.1
+PI97924 Improve the error handling of a Collective join command using sshPrivateKey option
+PI98247 After batch events config change, batchManagerZos hangs waiting for job completion; batch joblog events not published correctly.
+PI98295 The dispatch (JMS) message for a stopped job can, if later consumed, cause a later restart execution of that job to fail.
+PI98574 If Liberty Admin Center was accessed via reverse proxy, the Liberty server made an unnecessary request back to the proxy server.
+PI99031 Garbage collection events not captured by logstashCollector-1.0 for IBM Java 8 SR 5 FP 6 and above
+PI99138 Repeated delivery of Batch job dispatch JMS message resulting in ClassCastException each time.
+OLGH1261 LDAP registry with global class mapping in groupMemberIdMap adds "objectclass=*" to Group searches
+OLGH2792 On restart of a Java Batch job, deserialization fails when checkpoint objects contain array type fields.
+OLGH2877 JSP engine unable to find tag files within loose jar files.
+OLGH3045 Send and receive Strings in SIB messages using strict UTF8
+OLGH3102 In 18.0.0.1, the minify option is not making the runnable JAR package any smaller
+OLGH3103 Access Log "maxFiles" attribute not working as intended with value of 0
+OLGH3106 Kernel Service MBeans not properly exposed
+OLGH3127 Federated repositories doesn't restrict the names of extended properties
+OLGH3132 Package `com.ibm.websphere.kernel.server` is not exposed as IBM-API
+OLGH3140 Default app classloader ProtectionDomain set by common libraries
+OLGH3160 AsyncIO native direct ByteBuffer leak
+OLGH3198 Avoid full deserialization within ObjectMessage.toString()
+OLGH3226 NullPointerException from EJSContainer.postInvoke() method
+OLGH3233 Close streams for repositories represented by a single JSON file
+OLGH3248 Add mapping of all JSP files in web module into the generated_web.xml
+OLGH3280 Test Failure (20180420-0319): LoadTest.testCommitAndRollback RuntimePermission denied for WSJdbcTracer invoking newProxyInstance
+OLGH3383 ldapRegistry-3.0 does not configure a read timeout for JNDI connections
+OLGH3490 PI96086 - Nested EJB Async method calls not honoring nested get(timeout, unit) timeouts
+OLGH3520 suppressUncoveredHttpMethodWarning does not work
+OLGH3533 Redeploying WABs leads to OutOfMemoryError
+OLGH3577 JAXRSClientImpl.target(UriBuilder) fails with IllegalArgumentException when client built with input containing a template variable
+OLGH3578 Batch runtime should only transition to InstanceState.JMS_CONSUMED from JMS_QUEUED state.
+OLGH3700 java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgPreparedStatement.getLargeUpdateCount is not yet implemented.
+OLGH3739 Failure to load JPA PersistenceServiceUnit used by Batch feature using V2 version of JobInstance entity.
+OLGH3752 Connection leak if failure occurs while managed connection is being constructed
+OLGH3779 Update EclipseLink binaries from 2.6.6.WAS-3e5c71a to 2.6.6.WAS-0ab4033
+OLGH3785 Security exceptions thrown when trying to use IIOP with Java 2 security
+OLGH3851 JAX-RS Client APIs fail when attempting PATCH method over HTTPS on IBM JDK
+OLGH3889 Validate paths within WAR files
